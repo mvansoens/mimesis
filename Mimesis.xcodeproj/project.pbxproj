@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080E7F1992B668519346A119 /* IntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C04FA45BAE5FF457946DE74 /* IntervalTests.swift */; };
+		6D174755B9F72939B8D82610 /* MimesisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFEB6E97A0472E854901290 /* MimesisApp.swift */; };
+		879B8A18DABE399E319CCEC3 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A13B9FACB098679024D89 /* AudioEngine.swift */; };
+		B1E7F758F05D7800077A2AEE /* IntervalTrainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F760FA85621951C1948C1D8 /* IntervalTrainerView.swift */; };
+		F089411370D7472C49F323CA /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F708683D7E6D5716EA7CA /* Interval.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C5B3F3EB3BB238042D2683E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A81053168D5AD3DC216DC70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752395E92C35CD0281A956E0;
+			remoteInfo = Mimesis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003697BFD70C635805F72C74 /* Mimesis.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mimesis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10402D54C41E8D2BC9193EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1C04FA45BAE5FF457946DE74 /* IntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTests.swift; sourceTree = "<group>"; };
+		322A13B9FACB098679024D89 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		3F760FA85621951C1948C1D8 /* IntervalTrainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainerView.swift; sourceTree = "<group>"; };
+		656CEA6B9EB4E03F8F33685E /* MimesisTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MimesisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15F708683D7E6D5716EA7CA /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		ECFEB6E97A0472E854901290 /* MimesisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimesisApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F8B80D12DE31640BB960341 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				322A13B9FACB098679024D89 /* AudioEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		49C3CF5E202F0F81AE150DF8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10402D54C41E8D2BC9193EEA /* Info.plist */,
+				ECFEB6E97A0472E854901290 /* MimesisApp.swift */,
+				1F8B80D12DE31640BB960341 /* Audio */,
+				AA4501D79CB242B6665A1B6D /* Models */,
+				6EBDAC4602AFCD9E68B6E53A /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5601626D196A3278DA82F9A3 = {
+			isa = PBXGroup;
+			children = (
+				49C3CF5E202F0F81AE150DF8 /* App */,
+				7F4790BD4BEA6E3E65A791A9 /* Tests */,
+				7645ECEA3D62E5BDE16E520C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EBDAC4602AFCD9E68B6E53A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F760FA85621951C1948C1D8 /* IntervalTrainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7645ECEA3D62E5BDE16E520C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003697BFD70C635805F72C74 /* Mimesis.app */,
+				656CEA6B9EB4E03F8F33685E /* MimesisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F4790BD4BEA6E3E65A791A9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1C04FA45BAE5FF457946DE74 /* IntervalTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AA4501D79CB242B6665A1B6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A15F708683D7E6D5716EA7CA /* Interval.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51890152CB85BE88FB908AFC /* MimesisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B745E3F4704D03119A2255C /* Build configuration list for PBXNativeTarget "MimesisTests" */;
+			buildPhases = (
+				0E452D6EF6497E2560EACC0A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				833F837C24E8A550401EE2F7 /* PBXTargetDependency */,
+			);
+			name = MimesisTests;
+			packageProductDependencies = (
+			);
+			productName = MimesisTests;
+			productReference = 656CEA6B9EB4E03F8F33685E /* MimesisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		752395E92C35CD0281A956E0 /* Mimesis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975D4510E51B7FBD37DDE910 /* Build configuration list for PBXNativeTarget "Mimesis" */;
+			buildPhases = (
+				2022E3B0D4C09334C0DA4602 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mimesis;
+			packageProductDependencies = (
+			);
+			productName = Mimesis;
+			productReference = 003697BFD70C635805F72C74 /* Mimesis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A81053168D5AD3DC216DC70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					51890152CB85BE88FB908AFC = {
+						DevelopmentTeam = "";
+					};
+					752395E92C35CD0281A956E0 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = B77711839602EB31946606C0 /* Build configuration list for PBXProject "Mimesis" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5601626D196A3278DA82F9A3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7645ECEA3D62E5BDE16E520C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				752395E92C35CD0281A956E0 /* Mimesis */,
+				51890152CB85BE88FB908AFC /* MimesisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E452D6EF6497E2560EACC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E7F1992B668519346A119 /* IntervalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2022E3B0D4C09334C0DA4602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879B8A18DABE399E319CCEC3 /* AudioEngine.swift in Sources */,
+				F089411370D7472C49F323CA /* Interval.swift in Sources */,
+				B1E7F758F05D7800077A2AEE /* IntervalTrainerView.swift in Sources */,
+				6D174755B9F72939B8D82610 /* MimesisApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		833F837C24E8A550401EE2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752395E92C35CD0281A956E0 /* Mimesis */;
+			targetProxy = 6C5B3F3EB3BB238042D2683E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		009AD93C9D82636406A4BC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mana-it.mimesis.tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mimesis.app/Mimesis";
+			};
+			name = Release;
+		};
+		3D4AA451C04478692A1FC87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mana-it.mimesis.tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mimesis.app/Mimesis";
+			};
+			name = Debug;
+		};
+		BF4E11010823DDB1595FD041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		F2C99AF23999356810565C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		F48869EF6354B208FC3E030A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mana-it.mimesis";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F862B90838EC93A58D55183F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mana-it.mimesis";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B745E3F4704D03119A2255C /* Build configuration list for PBXNativeTarget "MimesisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4AA451C04478692A1FC87A /* Debug */,
+				009AD93C9D82636406A4BC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		975D4510E51B7FBD37DDE910 /* Build configuration list for PBXNativeTarget "Mimesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48869EF6354B208FC3E030A /* Debug */,
+				F862B90838EC93A58D55183F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B77711839602EB31946606C0 /* Build configuration list for PBXProject "Mimesis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2C99AF23999356810565C68 /* Debug */,
+				BF4E11010823DDB1595FD041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A81053168D5AD3DC216DC70 /* Project object */;
+}

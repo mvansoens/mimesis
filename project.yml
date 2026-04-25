@@ -1,0 +1,69 @@
+name: Mimesis
+options:
+  bundleIdPrefix: co.mana-it
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    DEVELOPMENT_TEAM: ""
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  Mimesis:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: App
+        type: group
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.mana-it.mimesis
+        INFOPLIST_FILE: App/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleName: Mimesis
+        CFBundleDisplayName: Mimesis
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSMicrophoneUsageDescription: "Mimesis uses the microphone for future humming analysis features."
+
+  MimesisTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Tests
+        type: group
+        createIntermediateGroups: true
+    dependencies:
+      - target: Mimesis
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.mana-it.mimesis.tests
+
+schemes:
+  Mimesis:
+    build:
+      targets:
+        Mimesis: all
+        MimesisTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - name: MimesisTests
+          parallelizable: true
+    archive:
+      config: Release
